@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>About us</h1>
+    <ul>
+        @foreach($about_ls as $ls)
+        <li>{{$ls}}</li>
+        @endforeach
+    </ul>
 </body>
 </html>

@@ -7,7 +7,8 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Hello word!</h1>
-    <a href=""></a>
+    <h1>{{$title}}</h1>
+    <h2>{{$sub_title}}</h2>
+    <a href="/about">{{$about_txt}}</a>
 </body>
 </html>

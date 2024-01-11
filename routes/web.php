@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data= [
+        'title' => "Hello word!",
+        'sub_title' => "Made using Laravel",
+        'about_txt' => "About Us"
+    ];
+    return view('home', $data);
+});
+
+Route::get('/about', function () {
+    $list = [
+        'about_ls' => [
+            "Chi siamo?",
+            "Contatti",
+            "Link"
+        ]
+        ];
+    return view('about', $list);
 });
